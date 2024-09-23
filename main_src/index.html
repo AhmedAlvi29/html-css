@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>First Class</title>
+    <link rel="icon" type="image/x-icon" href="/images/4548450.jpg">
+
+	<link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <h1><i>Hello</i> <b>World</b></h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud <i>exercitation ullamco laboris nisi ut </i>aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint
+      <b
+        >occaecat cupidatat non proident,<del>sunt in culpa qui officia</del>
+        deserunt <sup>2</sup><sub>4</sub> mollit anim</b
+      >
+      id est laborum.
+    </p>
+
+    <div class="back">
+      <div class="icon">
+        <i class="bx bxl-html5"></i>
+      </div>
+      <div class="btn btn-click">
+        <button type="submit">Hello HTML</button>
+      </div>
+    </div>
+    <form>
+      <input type="text" name="user" placeholder="Username" /><br />
+      <input type="email" name="email" placeholder="Email" /><br />
+      <input type="password" name="pass" placeholder="Password" /><br />
+      <input class="btn2" type="button" value="Sign in" /><br />
+      <a href="#">Forgot Password?</a>
+    </form>
+
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".btn-click").mouseenter(function () {
+          $("body").css("background", "rgb(0, 255, 0)");
+        });
+        $(".btn-click").click(function () {
+          $("body").css("background", "black");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    volumes:
+         - ./main_src:/var/www/html
+    ports:
+          - 80:80
+  db:
+    image: mysql
+    volumes:
+      - ./db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: docker_database 
+    ports:
+      - 3306:3306
